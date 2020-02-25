@@ -3,14 +3,14 @@ import Vuex, { StoreOptions } from 'vuex';
 
 import { IRootState } from '@/types';
 
-import { mock } from './mock';
+import { planets } from './planets';
 
 Vue.use(Vuex);
 
 const store: StoreOptions<IRootState> = {
     state: {},
     modules: {
-        mock
+        planets
     }
 };
 
