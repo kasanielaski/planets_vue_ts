@@ -1,6 +1,6 @@
 <template lang="pug">
 .main
-    Planet.main__planet(
+    Card.main__card(
         v-for="(planet, index) in planets"
         :key="index"
         :planet="planet"
@@ -12,13 +12,13 @@ import { Component, Vue } from 'vue-property-decorator';
 import { Getter, namespace } from 'vuex-class';
 import { PlanetT } from '../types';
 
-import Planet from '@/components/Planet.vue';
+import Card from '@/components/Card.vue';
 
 const planets = namespace('planets');
 
 @Component({
     components: {
-        Planet
+        Card
     }
 })
 export default class Main extends Vue {
@@ -28,6 +28,18 @@ export default class Main extends Vue {
 
 <style lang="scss" scoped>
 .main {
-    display: flex;
+    height: 100%;
+    width: 100vw;
+    margin: 10px 0 40px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 190px);
+    grid-template-rows: repeat(auto-fill, 400px);
+    grid-gap: 40px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    font-family: 'Major Mono Display';
+    text-transform: lowercase;
 }
 </style>

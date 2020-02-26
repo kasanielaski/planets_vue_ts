@@ -1,10 +1,10 @@
 <template lang="pug">
-.card
+.card(
+    :class="planet.name"
+)
     .planet
         .atmosphere(:style="atmosphereStyle")
-            .surface(
-                :style="sufraceStyle"
-            )
+            .surface(:style="sufraceStyle")
 
     .info
         h2.title {{ planet.name }}
@@ -43,18 +43,28 @@ export default class Planet extends Vue {
         return {
             'background-image': `url(${this.planet.image})`,
             animation: `planetRotate calc(${this.planet.day} * 0.1s) linear infinite`,
-            transform: `${this.planet.tilt} scale(1.2)`
+            transform: `rotate(${this.planet.tilt}deg) scale(1.2)`
         };
     }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+}
+
+.planet::before {
+    content: '';
+    position: absolute;
+    height: 190px;
+    z-index: -2;
+    left: 50%;
+    top: 0%;
+    border-left: 1px dashed rgba(255, 255, 255, 0.25);
 }
 
 .atmosphere {
@@ -76,6 +86,38 @@ export default class Planet extends Vue {
     width: 100%;
     z-index: -1;
     background-size: cover;
+}
+
+.info {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.label {
+    font-size: 11px;
+}
+
+.line {
+    flex: 1;
+    margin: 0 5px;
+    border-bottom: 1px solid dashed rgba(255, 255, 255, 0.3);
 }
 
 @keyframes planetRotate {
