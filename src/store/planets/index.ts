@@ -10,7 +10,6 @@ export const initialState = {
     planets: [
         {
             name: 'sun',
-            image: 'https://thebestcode.ru/media/solarSystem/sun.jpg',
             tilt: 0,
             day: 600,
             year: 0,
@@ -18,7 +17,6 @@ export const initialState = {
         },
         {
             name: 'mercury',
-            image: 'https://thebestcode.ru/media/solarSystem/mercury.jpg',
             tilt: 0.034,
             day: 1407.6,
             year: 88,
@@ -26,7 +24,6 @@ export const initialState = {
         },
         {
             name: 'venus',
-            image: 'https://thebestcode.ru/media/solarSystem/venus.jpg',
             tilt: 177.3,
             day: 5832.5,
             year: 224.7,
@@ -34,7 +31,6 @@ export const initialState = {
         },
         {
             name: 'earth',
-            image: 'https://thebestcode.ru/media/solarSystem/earth.jpg',
             tilt: 23.26,
             day: 23.9,
             year: 365.2,
@@ -42,7 +38,6 @@ export const initialState = {
         },
         {
             name: 'mars',
-            image: 'https://thebestcode.ru/media/solarSystem/mars.jpg',
             tilt: 25.2,
             day: 24.6,
             year: 687,
@@ -50,7 +45,6 @@ export const initialState = {
         },
         {
             name: 'jupiter',
-            image: 'https://thebestcode.ru/media/solarSystem/jupiter.jpg',
             tilt: 3.1,
             day: 9.9,
             year: 4331,
@@ -58,7 +52,6 @@ export const initialState = {
         },
         {
             name: 'saturn',
-            image: 'https://thebestcode.ru/media/solarSystem/saturn.jpg',
             tilt: 26.7,
             day: 10.7,
             year: 10747,
@@ -66,7 +59,6 @@ export const initialState = {
         },
         {
             name: 'uranus',
-            image: 'https://thebestcode.ru/media/solarSystem/uranus.jpg',
             tilt: 97.8,
             day: 17.2,
             year: 30589,
@@ -74,7 +66,6 @@ export const initialState = {
         },
         {
             name: 'neptune',
-            image: 'https://thebestcode.ru/media/solarSystem/neptune.jpg',
             tilt: 28.3,
             day: 16.1,
             year: 59800,
@@ -82,7 +73,6 @@ export const initialState = {
         },
         {
             name: 'pluto',
-            image: 'https://thebestcode.ru/media/solarSystem/pluto.jpg',
             tilt: 122.5,
             day: 153.3,
             year: 90560,
