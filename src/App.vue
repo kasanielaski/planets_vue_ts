@@ -12,9 +12,10 @@ export default class App extends Vue {}
 <style lang="scss">
 @import url('vars.css');
 
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 body,
-html,
-* {
+html {
     padding: 0;
     margin: 0;
 }

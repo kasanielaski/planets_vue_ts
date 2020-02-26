@@ -39,7 +39,7 @@ export default class Main extends Vue {
     justify-items: center;
     justify-content: center;
     overflow-x: hidden;
-    font-family: 'Major Mono Display';
-    text-transform: lowercase;
+    text-transform: uppercase;
+    font-family: 'Roboto';
 }
 </style>

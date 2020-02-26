@@ -11,13 +11,20 @@
 
         .form
             .item
-                label.label Tilt: {{ planet.tilt }}
+                label.label Tilt
+                span.line
+                //- span.arrow
+                span.detail {{ planet.tilt }} &deg;
 
             .item
-                label.label Day: {{ planet.day }}
+                label.label Day
+                span.line
+                span.detail {{ planet.day }} hours
 
             .item
-                label.label Year: {{ planet.year }}
+                label.label Year
+                span.line
+                span.detail {{ planet.year }} days
 </template>
 
 <script lang="ts">
@@ -117,7 +124,7 @@ export default class Planet extends Vue {
 .line {
     flex: 1;
     margin: 0 5px;
-    border-bottom: 1px solid dashed rgba(255, 255, 255, 0.3);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
 }
 
 @keyframes planetRotate {
