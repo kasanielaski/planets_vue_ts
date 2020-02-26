@@ -30,9 +30,9 @@ export default class Main extends Vue {
 .main {
     height: 100%;
     width: 100vw;
-    margin: 10px 0 40px 0;
+    margin: 10px 0 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 190px);
+    grid-template-columns: repeat(5, 190px);
     grid-template-rows: repeat(auto-fill, 400px);
     grid-gap: 40px;
     align-items: center;
