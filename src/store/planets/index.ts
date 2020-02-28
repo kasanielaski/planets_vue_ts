@@ -2,8 +2,6 @@ import { Module } from 'vuex';
 
 import { IRootState, IPlanetsState } from '@/types';
 
-import { actions } from './actions';
-import { mutations } from './mutations';
 import { getters } from './getters';
 
 export const initialState = {
@@ -86,8 +84,6 @@ const namespaced: boolean = true;
 
 export const planets: Module<IPlanetsState, IRootState> = {
     state,
-    actions,
-    mutations,
     getters,
     namespaced
 };

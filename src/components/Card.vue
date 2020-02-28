@@ -48,7 +48,7 @@ export default class Planet extends Vue {
 
     get sufraceStyle(): Object {
         return {
-            'background-image': `url(/planets/${this.planet.name}.jpg)`,
+            'background-image': `url(/planets/${this.planet.name}.webp)`,
             animation: `planetRotate calc(${this.planet.day} * 0.1s) linear infinite`,
             transform: `rotate(${this.planet.tilt}deg) scale(1.2)`
         };
