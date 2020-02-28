@@ -1,17 +1,20 @@
-# Vue boilerplate
+# Solar system demo
 
-## Includes
+## Demo
 
-- Vue.js (class-component + property-decorator)
-- Vuex (vuex-class)
-- Typescript
-- Pug
-- Sass
-- Eslint
-- Prettier
-- Jest
+[Heroku Link](https://glacial-plains-51029.herokuapp.com/)
 
-## Project setup
+### Includes
+
+-   Vue.js (class-component + property-decorator)
+-   Vuex (vuex-class)
+-   Typescript
+-   Pug
+-   Sass
+-   Eslint
+-   Prettier
+
+### Project setup
 
 ```sh
 yarn
@@ -34,22 +37,3 @@ yarn run build
 ```sh
 yarn run lint
 ```
-
-### Run your unit tests
-
-```sh
-yarn run test
-```
-
-## Docs
-
-- [Configuration Reference](https://cli.vuejs.org/config/)
-- [Vue-class-component](https://github.com/vuejs/vue-class-component)
-- [Vue-property-decorator](https://github.com/kaorun343/vue-property-decorator)
-- [Typescript](https://www.typescriptlang.org/)
-
-### Todo
-
-- ~~Add router~~
-- Add Cypress
-- Make feature-based architecture
