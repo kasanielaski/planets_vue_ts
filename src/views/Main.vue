@@ -42,4 +42,22 @@ export default class Main extends Vue {
     text-transform: uppercase;
     font-family: 'Roboto';
 }
+
+@media screen and (max-width: 1200px) {
+    .main {
+        grid-template-columns: repeat(3, 190px);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .main {
+        grid-template-columns: repeat(2, 190px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        grid-template-columns: repeat(1, 190px);
+    }
+}
 </style>
